@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/61/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/67/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/67/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tom/CLionProjects/ex1
+CMAKE_SOURCE_DIR = /home/tom/CLionProjects/Shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tom/CLionProjects/ex1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tom/CLionProjects/Shell/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/tom/CLionProjects/ex1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/61/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/67/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/61/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/67/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles /home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles /home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ex1
+# Target rules for targets named Shell
 
 # Build rule for target.
-ex1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ex1
-.PHONY : ex1
+Shell: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Shell
+.PHONY : Shell
 
 # fast build rule for target.
-ex1/fast:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/build
-.PHONY : ex1/fast
+Shell/fast:
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/build
+.PHONY : Shell/fast
 
 main.o: main.c.o
 
@@ -129,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/main.c.o
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/main.c.i
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/main.c.s
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ex1"
+	@echo "... Shell"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"

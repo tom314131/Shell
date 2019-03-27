@@ -50,54 +50,54 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/61/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/67/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/67/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tom/CLionProjects/ex1
+CMAKE_SOURCE_DIR = /home/tom/CLionProjects/Shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tom/CLionProjects/ex1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tom/CLionProjects/Shell/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ex1.dir
+# Target rules for target CMakeFiles/Shell.dir
 
 # All Build rule for target.
-CMakeFiles/ex1.dir/all:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/depend
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ex1"
-.PHONY : CMakeFiles/ex1.dir/all
+CMakeFiles/Shell.dir/all:
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/depend
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Shell"
+.PHONY : CMakeFiles/Shell.dir/all
 
 # Include target in all.
-all: CMakeFiles/ex1.dir/all
+all: CMakeFiles/Shell.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ex1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ex1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/ex1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ex1.dir/rule
+CMakeFiles/Shell.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Shell.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/CLionProjects/Shell/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Shell.dir/rule
 
 # Convenience name for target.
-ex1: CMakeFiles/ex1.dir/rule
+Shell: CMakeFiles/Shell.dir/rule
 
-.PHONY : ex1
-
-# clean rule for target.
-CMakeFiles/ex1.dir/clean:
-	$(MAKE) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/clean
-.PHONY : CMakeFiles/ex1.dir/clean
+.PHONY : Shell
 
 # clean rule for target.
-clean: CMakeFiles/ex1.dir/clean
+CMakeFiles/Shell.dir/clean:
+	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/clean
+.PHONY : CMakeFiles/Shell.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Shell.dir/clean
 
 .PHONY : clean
 
